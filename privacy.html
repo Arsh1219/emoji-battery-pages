@@ -61,6 +61,7 @@ footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #DDE3EB;
 <ul>
 <li><strong>The app never reads what is on your screen.</strong> The Accessibility Service is used only to draw your custom status bar on top of the real one. It does not read your screen content, typed text, passwords, messages or notifications.</li>
 <li>Your battery level, charging state, WiFi and mobile signal strength are read on your device only to draw the icons. None of it leaves your device.</li>
+<li>The app checks only whether the camera or microphone is in use by any app (never what they capture), so it can hide the custom status bar and keep the system privacy indicator visible. This check stays on your device.</li>
 <li>There is no account. You never sign in, and we never ask for your name, email address or phone number.</li>
 <li>We use Google Firebase to count how the app is used and to receive crash reports, and Google AdMob to show ads in the free version. These receive device and usage information described below.</li>
 <li>Subscriptions are handled entirely by Google Play. We never see your payment details.</li>
@@ -85,7 +86,7 @@ footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #DDE3EB;
 </table></div>
 
 <h2>Information that stays on your device</h2>
-<p>To draw the icons, the app reads your battery level, charging state, WiFi signal strength, mobile signal strength and the time. These are read live on your device and are never stored on a server, sent to us or shared with anyone. The design, theme, stickers, troll number and other settings you choose are stored only on your device.</p>
+<p>To draw the icons, the app reads your battery level, charging state, WiFi signal strength, mobile signal strength and the time. It also checks whether the camera or microphone is currently in use, without any access to what they record, so the custom bar can step aside for the system privacy indicator. These are read live on your device and are never stored on a server, sent to us or shared with anyone. The design, theme, stickers, troll number and other settings you choose are stored only on your device.</p>
 
 <h2>Information collected by services we use</h2>
 <div class="tablewrap"><table>
